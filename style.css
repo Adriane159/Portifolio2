@@ -352,11 +352,11 @@ span{
     text-align: center;
     margin-bottom: 3rem;
 }
-.contato form .input-box{
+/* .contato form .input-box{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-}
+} */
 .contato form .input-box input,
 .contato form areatexto{
     width: 100%;
@@ -368,6 +368,7 @@ span{
     border: 2px solid var(--main-color);
     margin: 1rem 0;
     resize: none;
+    display: flex;
 }
 .contato form .btn{
     margin-top: 2rem;

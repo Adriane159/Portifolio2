@@ -9,13 +9,13 @@ window.onscroll = () => {
         let top = window.scrollY;
         let offset = sec.offsetTop -150;
         let heigth = sec.offsetHeigth;
-        let id = sec.getAttibute('id');
+        let id = sec.getAttribute('id');
 
         if(top >= offset && top < offset + heigth){
             navlLinks.forEach(links => {
                 links.classList.remove('active');
                 document.querySelector('header nav a
-                [href*=' + id +']').classList.add
+                [href*=' + id +' ]').classList.add
                 ('active')
         
 
@@ -25,5 +25,5 @@ window.onscroll = () => {
 }
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('b-x');
-    navbar.classList.toggle('active')
+    navbar.classList.toggle('active');
 }
