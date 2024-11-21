@@ -39,6 +39,11 @@ body{
     z-index: 100;
 
 }
+#menu-icon{
+    font-size: 3.6rem;
+    color: var(--main-color);
+    display: none;
+}
 .logo{
     font-size: 3rem;
     color: var(--text-color);
@@ -53,7 +58,7 @@ body{
     font-size: 1.8rem;
     color: white;
     margin-left: 4rem;
-    font-weight: 500px;
+    font-weight: 500;
     transition: 0.3s ease-in-out;
     border-bottom: 3px solid transparent;
 
@@ -62,12 +67,6 @@ body{
 .navbar a:active{
     color: var(--main-color);
     border-bottom: 3px solid var(--main-color);
-}
-#menu-icon{
-    font-size: 3.6rem;
-    color: var(--main-color);
-    display: none;
-
 }
 section{
     min-height: 100vh;
@@ -100,7 +99,7 @@ span{
     font-size: 3.5rem;
 }
 .home-content h1{
-    font-size: 5rem;
+    font-size: 7rem;
     font-weight: 700;
     margin-top: 1.5rem;
     line-height: 1;
@@ -178,23 +177,23 @@ span{
 @keyframes words{
     0%,
     20%{
-        content: "de Viajar.";
+        content: "Viajar.";
     }
     21%,
     40%{
-        content: "de Experimentar Novos Sabores.";
+        content: "Experimentar Novos Sabores.";
     }
     41%,
     60%{
-        content: "de Música.";
+        content: "Música.";
     }
     61%,
     80%{
-        content: "de Aventuras.";
+        content: "Aventuras.";
     }
     81%,
     100%{
-        content: "de Desafios.";
+        content: "Desafios.";
     }
 }
 @keyframes typing{
@@ -254,7 +253,7 @@ span{
     text-align: center;
     font-size: 8rem;
 }
-.about-content h2{
+.sobre-content h2{
     text-align: left;
     font-size: 1.5;
 }
@@ -264,10 +263,10 @@ span{
 }
 .sobre-content p{
     font-size: 1.6rem;
-    margin: 2;
+    margin: 2rem 0 3rem;
 }
 .sobre-content .text-animation span::before{
-    content: "web developer";
+    content: "Aluna do curso Técnico em Desenvolvedor De Sistemas ";
     color: var(--main-color);
     animation: words 20s infinite;
 }
@@ -306,26 +305,26 @@ span{
     align-items: center;
     gap: 2.5rem;
 }
-.projeto_box{
-    background-color: var(--bg-color);
+.projeto-box{
+    background-color: var(--main-color);
     color: black;
     height: 250px;
     border-radius: 3rem;
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
-.projeto_box:hover{
+.projeto-box:hover{
     background: white;
     color: var(--main-color);
     transform: scale(1.03);
 }
-.projeto_box .projeto-info{
+.projeto-box .projeto-info{
     display: flex;
     flex-direction: column;
     text-align: left;
     max-height: 200px;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
     padding: 5rem;
 }
 .projeto-info h4{
@@ -336,6 +335,9 @@ span{
 .projeto-info p{
     font-size: 1.6rem;
     font-weight: 400px;
+    max-height: 100px;
+    margin: auto;
+
 }
 .contato{
     background-color: var(--bg-color-2);
@@ -348,7 +350,12 @@ span{
     max-width: 70rem;
     margin: 1rem auto;
     text-align: center;
-    margin-bottom: wrap;
+    margin-bottom: 3rem;
+}
+.contato form .input-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .contato form .input-box input,
 .contato form areatexto{
@@ -371,6 +378,11 @@ span{
     width: 100%;
     padding: 40px 0;
     background-color: var(--bg-color);
+}
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: var(--main-color);
 }
 .footer .social a{
     font-size: 25px;
@@ -435,7 +447,7 @@ span{
     section{
         padding: 10rem 3% 2rem;
     }
-    .projetos{
+    .projeto{
         padding-bottom: 7rem;
     }
     .footer{
@@ -479,6 +491,10 @@ span{
     }
     .home-conten h3{
         font-size: 2.6rem;
+    }
+    .home-content p{
+        max-width: 600px;
+        margin: 0 auto;
     }
     .home-img img{
         width: 56vw;
