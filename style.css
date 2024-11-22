@@ -105,10 +105,10 @@ span{
     line-height: 1;
 
 }
-.home-img{
-    border-radius: 50%;
+/* .home img{
+   border-radius: 50%;
 }
-.home-img img{
+.home img img{
     position: relative;
     top: 3rem;
     width: 22vw;
@@ -117,9 +117,9 @@ span{
     cursor: pointer;
     transition: 0.4s ease-in-out;
 }
-.home-img img:hover{
+.home img img:hover{
     box-shadow: 0 0 50px var(--main-color),
-                0 0 100px var(--main-color);
+                0 0 100px var(--main-color); */
 }
 .home-content p{
     font-size: 1.5rem;
@@ -197,27 +197,10 @@ span{
     }
 }
 @keyframes typing{
-    10%,
-    15%,
-    30%,
-    35%,
-    50%,
-    55%,
-    70%,
-    75%,
-    90%,
-    95%{
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
         width: 0;
     }
-    5%,
-    20%,
-    25%,
-    40%,
-    45%,
-    60%,
-    65%,
-    80%,
-    85%{
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
         width: calc(100% + 8px);
     }
 }
@@ -249,6 +232,35 @@ span{
     box-shadow: 0 0 50px var(--main-color),
                 0 0 100px var(--main-color)
 }
+.skills-icons{
+    display: inline-flex;
+    justify-self: start;
+    /* align-items: center; */
+    width: 4.5rem;
+    height: 4.5rem;
+    background: transparent;
+    border: 0.2rem solid var(--main-color);
+    font-size: 2.5rem;
+    border-radius: 50%;
+    color: var(--main-color);
+    /* margin: 3rem 1.5em 3rem 0; */
+    transition: 0.3s ease-in-out;
+    transform: translateY(200px);
+    position: absolute;
+    margin-left: 10px;
+
+}
+.social-icons a:hover{
+    color: white;
+    transform: scale(1.3)translateY(-5px);
+    box-shadow: 0 0 25px var(--main-color);
+    background-color: var(--main-color);
+}
+.skills-icons a:hover{
+    color: white;
+    transform: scale(1.3)translateY(-5px);
+    box-shadow: 0 0 25px var(--main-color);
+    background-color: var(--main-color);
 .ler{
     text-align: center;
     font-size: 8rem;
@@ -265,7 +277,7 @@ span{
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
 }
-.sobre-content .text-animation span::before{
+/* .sobre-content .text-animation span::before{
     content: "Aluna do curso Técnico em Desenvolvedor De Sistemas ";
     color: var(--main-color);
     animation: words 20s infinite;
@@ -278,7 +290,7 @@ span{
     height: 100%;
     border-left: 3px solid var(--bg-color-2);
     right: -8px;
-    animation: cursor 0.6s infinite, typing 20s steps(14)infinite;
+    animation: cursor 0.6s infinite, typing 40s steps(14)infinite; */
 }
 ::-webkit-scrollbar{
     width: 15px;
