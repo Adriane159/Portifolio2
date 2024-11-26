@@ -1,14 +1,14 @@
-let menuIcon = document.querySelector('#menu-icom');
+let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 let sections = document.querySelector('section');
 let navlLinks = document.querySelector('header nav a');
 
 
 window.onscroll = () => {
-    sections.forEach(sec =>{
+    sections.forEach(sec => {
         let top = window.scrollY;
         let offset = sec.offsetTop -150;
-        let heigth = sec.offsetheigth;
+        let heigth = sec.offsetHeigth;
         let id = sec.getAttribute('id');
 
         if(top >= offset && top < offset + heigth){
