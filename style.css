@@ -145,7 +145,7 @@ span{
 .text-animation span::before{
     content: "web developer";
     color: var(--main-color);
-    animation: words 20s infinite;
+    animation: words 15s infinite;
 }
 .text-animation span::after{
     content: "";
@@ -155,7 +155,7 @@ span{
     height: 100%;
     border-left: 3px solid var(--bg-color);
     right: -8px;
-    animation: cursor 0.6s infinite, typing 20s steps(14)infinite;
+    animation: cursor 0.6s infinite, typing 15s steps(14)infinite;
 }
 @keyframes cursor{
     to{
@@ -167,10 +167,10 @@ span{
     20%{
         content: "Viajar.";
     }
-    21%,
+    /* 21%,
     40%{
         content: "Experimentar Novos Sabores.";
-    }
+    } */
     41%,
     60%{
         content: "Música.";
@@ -199,8 +199,8 @@ span{
     gap: 10rem;
     background-color: var(--bg-color-2);
     color: white;
-    width: 100%;        /* Largura 100% da tela */
-    margin: 0 auto;     /* Centraliza horizontalmente */
+    width: 100%;        
+    margin: 0 auto;     
     padding: 30px;
 }
 .sobre h2 span{
@@ -265,6 +265,7 @@ span{
 .sobre-content p{
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
+    text-align: justify;
 
 }
 ::-webkit-scrollbar{
@@ -290,7 +291,7 @@ span{
 
 }
 .projeto-container{
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(3,1fr);
     align-items: center;
     gap: 5rem;
@@ -505,6 +506,7 @@ span{
         font-size: 55%;
     }
     .projeto-container{
+        display: grid;
         padding-bottom: 7rem;
         grid-template-columns: repeat(2,1fr);
         margin: 0 5rem;
@@ -553,6 +555,8 @@ span{
     .home{
         flex-direction: column;
         margin: 5rem 4rem;
+        margin-top: 10px;
+
     }
     .home-content h1{
         font-size: 8rem;
@@ -565,6 +569,7 @@ span{
     .home-content p{
         max-width: 600px;
         margin: 0 auto;
+    
     }
     .home-img img{
         width: 56vw;
